@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Footprint Calculator</title>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-expand-sm navbar-dark custom-nav ">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="images/logo.png"></a> <button aria-controls="nav-2" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#nav-2" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="nav-2">
+				<ul class="navbar-nav ms-auto nav-text">
+					<li>
+						<a class="nav-link " href="#">Home</a>
+					</li>
+					<li>
+						<a class="nav-link active" href="#">Footprint Tracker</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Goals</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Challenges</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Leaderboard</a>
+					</li>
+				</ul>
+				<div class="dropdown custom-dropdown">
+          <img src="images/user-icon.svg" class="ml-2"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+			</div>
+		</div>
+	</nav>
+
+  <!-- Footprint-Tracker -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        
+        <div class="Footprint-Tracker-heading">
+          <h3>Footprint-Tracker</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        <ul class="time-lenght horizontal-list">
+          <li><a class="time-lenght-btn" href="#14">YEAR</a></li>
+          <li><a class="time-lenght-btn active" href="#15">MONTH</a></li>
+          <li><a class="time-lenght-btn" href="#16">ALL</a></li>
+      </ul>
+        <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+        <div class="line-chart-block block">
+            <div class="line-chart">
+                <div class='grafico'>
+                    <ul class='eje-y'>
+                      <li data-ejeY='7'></li>
+                      <li data-ejeY='6'></li>
+                      <li data-ejeY='5'></li>
+                      <li data-ejeY='4'></li>
+                      <li data-ejeY='3'></li>
+                      <li data-ejeY='2'></li>
+                      <li data-ejeY='1'></li>
+                    </ul>
+                    <ul class='eje-x'>
+                      <li>Jan 20</li>
+                      <li>Fab 20</li>
+                      <li>Mar 20</li>
+                      <li>Apr 20</li>
+                      <li>May 20</li>
+                      <li>Jun 20</li>
+                    </ul>
+                      <span data-valor='25'>
+                      <span data-valor='8'>
+                      <span data-valor='13'>
+                      <span data-valor='5'>   
+                      <span data-valor='23'>   
+                      <span data-valor='12'>
+                      <span data-valor='15'>
+                      </span></span></span></span></span></span></span>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="row category">
+          <div class="col-10"><h5><b>FOOTPRINT BY CATEGORY</b></h5></div>
+          <div class="col-2">
+            <div class="filter-icon">
+              <img src="images/filter.svg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="blue-box mt-2">
+              <div class="donut-chart-block block"> 
+                  <div class="donut-chart mt-5">
+                      <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+                      <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+                      <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+                      <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+                      <p class="center-date">11,800<br><span class="scnd-font-color">kgCo2e</span></p>        
+                  </div>
+                  <div class="row m-3 mt-5 mb-1">
+                    <div class="col-6">
+                      <div class="d-flex blue-box-content">
+                        <div class="w-50"><p>Public</p></div>
+                        <div class="w-50 text-end"><p>66 %</p></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="progress">
+                        <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-3 mt-0 mb-1">
+                    <div class="col-6">
+                      <div class="d-flex blue-box-content">
+                        <div class="w-50"><p>Services</p></div>
+                        <div class="w-50 text-end"><p>66 %</p></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="progress">
+                        <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-3 mt-0 mb-1">
+                    <div class="col-6">
+                      <div class="d-flex blue-box-content">
+                        <div class="w-50"><p>Energy</p></div>
+                        <div class="w-50 text-end"><p>66 %</p></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="progress">
+                        <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-3 mt-0 mb-1">
+                    <div class="col-6">
+                      <div class="d-flex blue-box-content">
+                        <div class="w-50"><p>Transpotation</p></div>
+                        <div class="w-50 text-end"><p>66 %</p></div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="progress">
+                        <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <div class="average">
+                        <p><b>Your annual footprint is average</b></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-Footprint-Tracker -->
+
+  <!-- Monthly-Carbon -->
+  <section class="Monthly-Carbon">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="Monthly-Carbon-content">
+              <h4>My Monthly Carbon Footprint Trend</h4>
+              <h2>11,800 <span>lbsCO2e</span></h2>
+              <button class="Footprint">Reduce My Footprint</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-Monthly-Carbon -->
+
+  <!-- Update-My-Impact -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-9">
+        <div class="Update-My-Impact-heading">
+          <h3>Update My Impact</h3>
+          <p>Edit the options to personalize and improve the accuracy of your footprint.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-3 text-end">
+        <div class="filter-icon pt-3">
+          <img src="images/filter.svg">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="white-card">
+          <div class="card-header text-center">
+            <h4>Energy <span><img src="images/edit-icon.svg"></span></h4>
+          </div>
+          <div class="second-header-en p-4">
+            <div class="row">
+              <div class="col-6 text-start">
+                <h2>11,800 <span>lbsCO2e</span></h2>
+              </div>
+              <div class="col-6 text-end">
+                <p class="pt-2">Feb 24, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-5">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Heat</p></div>
+                <div class="w-50 text-end"><p>66 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Electronics</p></div>
+                <div class="w-50 text-end"><p>25 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Water</p></div>
+                <div class="w-50 text-end"><p>14 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="white-card">
+          <div class="card-header orange-line text-center">
+            <h4>Transportation <span><img src="images/edit-icon.svg"></span></h4>
+          </div>
+          <div class="second-header-en p-4">
+            <div class="row">
+              <div class="col-6 text-start">
+                <h2>334 <span>lbsCO2e</span></h2>
+              </div>
+              <div class="col-6 text-end">
+                <p class="pt-2">Feb 24, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-5">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Heat</p></div>
+                <div class="w-50 text-end"><p>66 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Electronics</p></div>
+                <div class="w-50 text-end"><p>25 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Water</p></div>
+                <div class="w-50 text-end"><p>14 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="white-card">
+          <div class="card-header orange-line-light text-center">
+            <h4>Public  <span><img src="images/edit-icon.svg"></span></h4>
+          </div>
+          <div class="second-header-en p-4">
+            <div class="row">
+              <div class="col-6 text-start">
+                <h2>645 <span>lbsCO2e</span></h2>
+              </div>
+              <div class="col-6 text-end">
+                <p class="pt-2">Feb 24, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-5">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Heat</p></div>
+                <div class="w-50 text-end"><p>66 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Electronics</p></div>
+                <div class="w-50 text-end"><p>25 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 38%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Water</p></div>
+                <div class="w-50 text-end"><p>14 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="white-card">
+          <div class="card-header green-line text-center">
+            <h4>Food <span><img src="images/edit-icon.svg"></span></h4>
+          </div>
+          <div class="second-header-en p-4">
+            <div class="row">
+              <div class="col-6 text-start">
+                <h2>850 <span>lbsCO2e</span></h2>
+              </div>
+              <div class="col-6 text-end">
+                <p class="pt-2">Feb 24, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-5">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Heat</p></div>
+                <div class="w-50 text-end"><p>66 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Electronics</p></div>
+                <div class="w-50 text-end"><p>25 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 mt-2">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="w-50"><p>Water</p></div>
+                <div class="w-50 text-end"><p>14 %</p></div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="progress">
+                <div class="progress-bar custom-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end-Update-My-Impact -->
+
+
+
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><img src="images/facebook.svg"></a></li>
+                  <li><a class="insta" href="#"><img src="images/insta.svg"></a></li>
+                  <li><a class="twetter" href="#"><img src="images/twetter.svg"></a></li>
+                  <li><a class="linkedin" href="#"><img src="images/linkdin.svg"></a></li>   
+                </ul>
+              </div>
+        </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem<br> Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="footer-pages">
+                <ul>
+                    <li><a href="#">Terms </a></li>
+                    <li>|</li>
+                    <li><a href="#">Privacy </a></li>
+                    <li>|</li>
+                    <li><a href="#">Compliances </a></li>
+                    <li>|</li>
+                    <li><a href="#">Contact us </a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="copyright-text">&copy; Copyright Greenaider.  All Rights Reserved by </p>
+        </div>
+      </div>
+   
+    </div>
+  </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
