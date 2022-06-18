@@ -715,4 +715,7 @@ a.time-lenght-btn.active {
 .row.category {
   padding-top: 40px;
 }
+    a.navbar-brand img {
+    width: 210px;
+}
 }
